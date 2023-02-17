@@ -4,4 +4,10 @@
 
 <h1>Hello World!!!</h1>
 
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Send</button>
+</form>
+
 {% endblock %}
